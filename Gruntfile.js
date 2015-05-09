@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         verbose: true,
         quality: 80,
         alphaQuality: 80,
-        compressionMethod: 6,
+        compressionMethod: 3,
         segments: 4,
         psnr: 42,
         sns: 50,
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['*.{webp,jpg,png}', '!*_small*', '*_medium*', '*_large*'],
+          src: ['*.{webp,jpg,png}', '!*_small*', '!*_medium*', '!*_large*'],
           cwd: 'images/',
           dest: 'images/'
         }]
