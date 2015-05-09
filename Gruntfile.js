@@ -9,7 +9,6 @@ module.exports = function(grunt) {
         dest: 'webp-images/'
       },
       options: {
-        //binpath: './node_modules/webP/bin/',
         preset: 'default',
         verbose: true,
         quality: 80,
@@ -33,13 +32,13 @@ module.exports = function(grunt) {
       }
     },
 
-    imagemin: {                          // Task
-      dynamic: {                         // Target
+    imagemin: {
+      dynamic: {
         files: [{
-          expand: true,                  // Enable dynamic expansion
-          cwd: 'images/',                   // Src matches are relative to this path
-          src: ['*.{png,jpg,gif}'],   // Actual patterns to match
-          dest: 'imagemin-images/'                  // Destination path prefix
+          expand: true,
+          cwd: 'images/',
+          src: ['*.{png,jpg,gif}'],
+          dest: 'imagemin-images/'
         }]
       }
     },
@@ -87,7 +86,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'css/',
-          src: ['*.css', '!*.min.css'],
+          src: ['*.css', '!*.min.css', '!bootstrap*'],
           dest: 'css/',
           ext: '.min.css'
         }]
