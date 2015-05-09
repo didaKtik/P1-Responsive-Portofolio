@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'images/',
         src: '*.{png,jpg}',
-        dest: 'webp-images/'
+        dest: 'images/'
       },
       options: {
         preset: 'default',
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'images/',
           src: ['*.{png,jpg,gif}'],
-          dest: 'imagemin-images/'
+          dest: 'images/'
         }]
       }
     },
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
           expand: true,
           src: ['*.{gif,jpg,png}'],
           cwd: 'images/',
-          dest: 'responsive-images/'
+          dest: 'images/'
         }]
       }
     },
