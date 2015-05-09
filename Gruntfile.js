@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         dest: 'webp-images/'
       },
       options: {
-        binpath: require('webp-bin').path,
+        binpath: 'C:/Program Files/webP/libwebp-0.4.3-windows-x86/bin',
         preset: 'default',
         verbose: true,
         quality: 80,
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
           dest: 'responsive-images/'
         }]
       }
-    }
+    },
 
     cssmin: {
       target: {
@@ -103,7 +103,7 @@ grunt.loadNpmTasks('grunt-responsive-images');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 grunt.registerTask('default', [
-  'newer:grunt-webp'
+  'newer:grunt-webp',
   'newer:imagemin',
   'newer:responsive_images',
   'newer:grunt-contrib-cssmin']
