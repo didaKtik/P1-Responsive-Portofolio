@@ -1,0 +1,75 @@
+.container-fluid {
+	max-width: 960px;
+}
+
+.row {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.titles {
+	text-align: center;
+}
+
+.logo {
+	display: block;
+	width: 120px;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	margin-top: 10px;
+}
+
+h1, h4 {
+	font-family: 'Courgette';
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+hr {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-width: 3px;
+}
+
+.projects div:nth-of-type(2n+1) {
+	text-align: left;
+}
+
+.projects div:nth-of-type(2n+0) {
+	text-align: right;
+}
+
+.project-tile {
+	margin-bottom: 10px;
+	border-bottom: 2px solid #eee;
+}
+
+.project-tile h3 {
+	margin-bottom: 0;
+}
+
+.project-tile a {
+	margin-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	overflow-wrap: break-word;
+}
+
