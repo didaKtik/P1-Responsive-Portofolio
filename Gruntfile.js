@@ -102,8 +102,8 @@ grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 grunt.registerTask('default', [
   'webp',
-  'imagemin',
   'responsive_images',
+  'imagemin',
   'cssmin']
 );
 
