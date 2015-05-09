@@ -96,17 +96,16 @@ module.exports = function(grunt) {
 
   });
 
-grunt.loadNpmTasks('grunt-newer');
 grunt.loadNpmTasks('grunt-webp');
 grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-responsive-images');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 grunt.registerTask('default', [
-  'newer:grunt-webp',
-  'newer:imagemin',
-  'newer:responsive_images',
-  'newer:grunt-contrib-cssmin']
+  'grunt-webp',
+  'imagemin',
+  'responsive_images',
+  'grunt-contrib-cssmin']
 );
 
 };
