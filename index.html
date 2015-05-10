@@ -27,7 +27,14 @@
       <hr>
       <div class="row">
         <div class="col-xs-12">
-          <img class="img-responsive" src="images/emil-nolde.jpg" alt="Emil Nolde painting">
+          <picture>
+            <source srcset="images/emil-nolde-960.webp 960w, images/emil-nolde-640.webp 640w, images/emil-nolde-380.webp 380w"
+                    type="image/webp">
+            <img class="img-responsive"
+                 src="images/emil-nolde-960.jpg"
+                 srcset="images/emil-nolde-960.jpg 960w, images/emil-nolde-640.jpg 640w, images/emil-nolde-380.jpg 380w"
+                 alt="Emil Nolde painting">
+          </picture>
         </div>
       </div>
       <hr>
