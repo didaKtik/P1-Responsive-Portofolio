@@ -9,37 +9,7 @@ module.exports = function(grunt) {
         dest: 'images/'
       },
       options: {
-        preset: 'default',
-        verbose: true,
-        quality: 80,
-        alphaQuality: 80,
-        compressionMethod: 3,
-        segments: 4,
-        psnr: 42,
-        sns: 50,
-        filterStrength: 40,
-        filterSharpness: 3,
-        simpleFilter: true,
-        partitionLimit: 50,
-        analysisPass: 6,
-        multiThreading: true,
-        lowMemory: false,
-        alphaMethod: 0,
-        alphaFilter: 'best',
-        alphaCleanup: true,
-        noAlpha: false,
-        lossless: true
-      }
-    },
-
-    imagemin: {
-      dynamic: {
-        files: [{
-          expand: true,
-          cwd: 'images/',
-          src: ['*.{png,jpg,gif}'],
-          dest: 'images/'
-        }]
+        quality: 20
       }
     },
 
@@ -49,27 +19,16 @@ module.exports = function(grunt) {
           engine: 'im',
           sizes: [{
             width: '960',
-            suffix: '_large'
+            suffix: '_large',
+            quality: 30
           },{
-            width: '500',
-            suffix: '_medium'
+            width: '640',
+            suffix: '_medium',
+            quality: 30
           },{
-            width: '300',
-            suffix: '_small'
-          },{
-            width: '1920',
-            suffix: "_large_x2",
-            quality: 60
-          }
-          ,{
-            width: '1000',
-            suffix: "_medium_x2",
-            quality: 60
-          }
-          ,{
-            width: '600',
-            suffix: "_small_x2",
-            quality: 60
+            width: '380',
+            suffix: '_small',
+            quality: 30
           }]
         },
         files: [{
@@ -96,15 +55,7 @@ module.exports = function(grunt) {
   });
 
 grunt.loadNpmTasks('grunt-webp');
-grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-responsive-images');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
-
-grunt.registerTask('default', [
-  'webp',
-  'responsive_images',
-  'imagemin',
-  'cssmin']
-);
 
 };
