@@ -1,12 +1,18 @@
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 500px) and (max-width: 760px) {
 	.project-tile {
 		width: 50%;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 761px) {
 	.logo {
 		margin:	0;
+	}
+}
+
+@media (min-width: 500px) {
+	.projects div:nth-of-type(n) {
+		text-align: center;
 	}
 }
 
