@@ -1,3 +1,5 @@
+
+/* General structure */
 .container-fluid {
 	max-width: 960px;
 }
@@ -7,6 +9,8 @@
 	margin-bottom: 10px;
 }
 
+
+/* Header */
 .header {
 	display: flex;
 	flex-wrap: wrap;
@@ -23,12 +27,19 @@
 	margin: 0 auto;
 }
 
-h1, h2, h3 {
+
+/* Text style */
+h1,
+h2,
+h3 {
 	margin-top: 10px;
 }
 
-h1, h2, h3, h4, a {
-	font-family: 'Courgette';
+h1,
+h2,
+h3,
+h4{
+	font-family: Courgette;
 }
 
 h1 {
@@ -39,12 +50,23 @@ h4 {
 	font-size: 20px;
 }
 
+a {
+	font-family: Courgette;
+	text-decoration: none;
+	color: black;
+	display: block;
+	overflow-wrap: break-word;
+}
+
+
+/* Horizontal rule */
 hr {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: 0;
 	border-width: 3px;
 }
 
+
+/* Projects */
 .projects div:nth-of-type(2n+1) {
 	text-align: left;
 }
@@ -64,11 +86,4 @@ hr {
 
 .project-tile a {
 	margin-bottom: 5px;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-	display: block;
-	overflow-wrap: break-word;
 }
