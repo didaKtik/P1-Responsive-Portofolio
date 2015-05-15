@@ -42,6 +42,14 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
+      merge: {
+        files: {
+          'css/merged.css': ['css/normalize.css',
+                             'css/bootstrap.css',
+                             'css/style.css',
+                             'css/responsive.css']
+        }
+      },
       minify: {
         files: [{
           expand: true,
@@ -50,14 +58,6 @@ module.exports = function(grunt) {
           dest: 'css/',
           ext: '.min.css'
         }]
-      },
-      merge: {
-        files: {
-          'css/merged.css': ['css/normalize.css',
-                             'css/bootstrap.css',
-                             'css/style.css',
-                             'css/responsive.css']
-        }
       }
     }
 
