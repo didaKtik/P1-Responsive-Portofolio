@@ -11,6 +11,18 @@
 }
 
 @media (min-width: 768px) {
+	.header {
+		font-size: 1rem;
+	}
+
+	.banner {
+		font-size: 1rem;
+	}
+
+    .projects {
+    	font-size: 1rem;
+    }
+
 	.logo {
 		margin:	0;
 	}

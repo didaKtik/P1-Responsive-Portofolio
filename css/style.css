@@ -1,5 +1,13 @@
 
 /* General structure */
+html {
+	font-size: 12px;
+}
+
+body {
+	font-size: 1rem;
+}
+
 .container-fluid {
 	max-width: 960px;
 }
@@ -9,10 +17,35 @@
 }
 
 
+/* Text style */
+h1,
+h2,
+h3 {
+	margin-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4{
+	font-family: Courgette;
+}
+
+a {
+	font-family: Courgette;
+	text-decoration: none;
+	color: black;
+	display: block;
+	overflow-wrap: break-word;
+}
+
+
 /* Header */
 .header {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
+	font-size: 0.8rem;
 }
 
 .logo {
@@ -30,34 +63,12 @@
     border: none;
 }
 
-/* Text style */
-h1,
-h2,
-h3 {
-	margin-top: 10px;
-}
-
-h1,
-h2,
-h3,
-h4{
-	font-family: Courgette;
-}
-
 h1 {
-	font-size: 48px;
+	font-size: 4em;
 }
 
 h4 {
-	font-size: 20px;
-}
-
-a {
-	font-family: Courgette;
-	text-decoration: none;
-	color: black;
-	display: block;
-	overflow-wrap: break-word;
+	font-size: 1.66em;
 }
 
 
@@ -68,7 +79,21 @@ hr {
 }
 
 
+/* Banner */
+.banner{
+	font-size: 0.9rem;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+
 /* Projects */
+.projects{
+	font-size: 1rem;
+}
+
 .projects div:nth-of-type(2n+1) {
 	text-align: left;
 }
@@ -82,10 +107,12 @@ hr {
 	border-bottom: 2px solid #eee;
 }
 
-.project-tile h3 {
-	margin-bottom: 0;
+.project-tile a {
+	font-size: 1.15em;
+	margin-bottom: 5px;
 }
 
-.project-tile a {
-	margin-bottom: 5px;
+h3 {
+	font-size: 2em;
+	margin-bottom: 0;
 }
