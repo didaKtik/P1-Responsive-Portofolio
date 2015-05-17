@@ -44,9 +44,7 @@ module.exports = function(grunt) {
     cssmin: {
       merge: {
         files: {
-          'css/merged.css': ['css/normalize.css',
-                             'css/bootstrap.css',
-                             'css/style.css',
+          'css/merged.css': ['css/style.css',
                              'css/responsive.css']
         }
       },
